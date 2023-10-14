@@ -1,0 +1,80 @@
+body {
+    background-image: url("https://img.freepik.com/free-vector/pink-grid-neon-patterned-background_53876-114920.jpg?t=st=1697060523~exp=1697061123~hmac=af4b9aa6eea2e001d0ca7ffe6ec76f9b26dea8113f6add644ce76ea4e2119932");
+    background-size: contain;
+    overflow: hidden;
+    
+}
+#title {
+    margin-left: 38%;
+    color: #af9fa4;
+    font-family: gothic medium;
+}
+#triqui {
+    display: grid;
+    margin-left: 38%;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    width: 320px;
+}
+.cell {
+    width: 100px;
+    height: 100px;
+    color: #c299c2;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    border: 1px solid #797575;
+    cursor: pointer;
+}
+.cell:nth-child(3n + 1) {
+    border-left: none;
+}
+.cell:nth-child(3n) {
+    border-right: none;
+}
+.cell:nth-child(-n + 3) {
+    border-top: none;
+}
+.cell:nth-child(n + 7) {
+    border-bottom: none;
+}
+#message {
+
+    font-size: 40px;
+    font-family: gothic;
+    color:white;
+    text-align: center;
+    margin-top: 2%; 
+    background-image:url("https://img.freepik.com/vector-gratis/marco-neon-rosa-sobre-fondo-oscuro_53876-154040.jpg?t=st=1697150332~exp=1697150932~hmac=99c4f949aa8c9e3c1366c4d1fced9f152a42ae6e2b0c7e2ed2e63ab87b4e86f7") ;
+    
+}
+#score {
+    display: flex; 
+    align-items: center; 
+    color: white;
+    background-image:url("https://as1.ftcdn.net/v2/jpg/06/21/97/62/1000_F_621976282_2SIQ3sNzVabS8Gz3fTWJqwSdvbH3HjV0.jpg") ;
+    font-size: 40px;
+    background-size: cover;
+    background-repeat: repeat;
+}
+#jugador1, #jugador2 {
+    color: whitesmoke;
+    font-family: 'Times New Roman';
+    font-size: 25px;
+    background-image:url("https://as1.ftcdn.net/v2/jpg/06/21/97/62/1000_F_621976282_2SIQ3sNzVabS8Gz3fTWJqwSdvbH3HjV0.jpg") ;
+    background-size: cover;
+    background-repeat: repeat;
+    
+}
+.table {
+    display: flex;
+    gap: 45px;
+}
+#botonIntentarDeNuevo {
+    display: none;
+    color: rgb(99, 99, 148);
+    margin-left: 90%;
+    font-size: 90%;
+    font-family: "verdana";
+    background-color: #c299c2;
+}
